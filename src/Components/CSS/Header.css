@@ -1,0 +1,12 @@
+.navbar{
+    background: #4E4FEB;
+}
+
+.navbar li{
+    display: inline;
+    margin-left: 1%;
+}
+
+.navbar li img{
+    height: 50px;
+}
