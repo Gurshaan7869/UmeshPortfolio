@@ -1,17 +1,13 @@
-//https://colorhunt.co/palette/0000004e4feb068fffeeeeee
-//000000 - black
-//4E4FEB - dark blue
-//068FFF - light blue
-//EEEEEE - grey
-import Header from "./Header"
-import Footer from "./Footer"
-import Animation from "./Animation/Animation"
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-function Mainpage(){
-    return(<div>
-        <Header/>
-        <Footer/>
-    </div>)
-}
+const Mainpage = () => {
+  return (
+    <div>
+      <h1>Main Page</h1>
+      <Outlet />
+    </div>
+  );
+};
 
-export default Mainpage
+export default Mainpage;
