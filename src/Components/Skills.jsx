@@ -1,24 +1,28 @@
-function Skills(){
-    return(<div>
-        
-### Skills
+import React from 'react';
 
-- Web, Mobile, API, Thick Client Application Security Assessment (VAPT)
-- OWASP ASVS, WSTG, MAS
-- Vulnerability Assessment
-- Penetration Testing
-- Cloud Security Posture Management
-- Information Security Audits (ISO 27001, SOC2, PCI DSS)
-- Secure Source Code Analysis
-- Reverse Engineering & Debugging
-- MITRE ATT&CK, OWASP, PTES
-- Playbook Creation
-- Threat Hunting and Modelling
-- Computer Networking
-- Python and Shell Scripting
-- Network Security
+const Skills = ({ skills }) => {
+  if (!skills || skills.length === 0) {
+    return (
+      <div>
+        <h2>Skills</h2>
+        <p>No skills data available.</p>
+      </div>
+    );
+  }
 
-    </div>)
-}
+  return (
+    <div className="skills-container">
+      <h2>Skills</h2>
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-card">
+            {skill.logo && <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />}
+            <p>{skill.name}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;

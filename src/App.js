@@ -1,52 +1,42 @@
-import React,{useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Profile from './Components/Profile';
-import Education from './Components/Education';
-import WorkExperience from './Components/Experience';
-import Skills from './Components/Skills';
-import Certificates from './Components/Certificates';
-import Expertise from './Components/Expertise';
-import Achievements from './Components/Achievements';
-import Languages from './Components/Languages';
-import Interests from './Components/Interests';
-import Contact from './Components/Contact';
-import Animation from './Components/Animation/Animation'
+import React, { useState } from 'react';
+import PersonalInfo from './components/PersonalInfo';
+import WorkExperience from './components/WorkExperience';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import data from './data/portfolioData.json';
 import './App.css';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [currentSection, setCurrentSection] = useState('personal_info');
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500); 
-  }, []);
+  const handleNavigation = (section) => {
+    setCurrentSection(section);
+  };
 
-  if (isLoading) {
-    return <Animation />;
-  }
   return (
-    <Router>
-      <Header />
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Profile />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/certificates" element={<Certificates />} />
-          <Route path="/expertise" element={<Expertise />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/languages" element={<Languages />} />
-          <Route path="/interests" element={<Interests />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-      <Footer />
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <h1>Digital Portfolio</h1>
+        <div className="navigation-buttons">
+          <button onClick={() => handleNavigation('personal_info')}>Personal Info</button>
+          <button onClick={() => handleNavigation('work_experience')}>Work Experience</button>
+          <button onClick={() => handleNavigation('education')}>Education</button>
+          <button onClick={() => handleNavigation('skills')}>Skills</button>
+          {/* Add more buttons for other sections as needed */}
+        </div>
+      </header>
+      <main className="App-main">
+        <div className="card">
+          {currentSection === 'personal_info' && <PersonalInfo data={data.personal_information} />}
+          {currentSection === 'work_experience' && <WorkExperience workExperiences={data.contact_profile.work_experience} />}
+          {currentSection === 'education' && <Education educations={data.education} />}
+          {currentSection === 'skills' && <Skills skills={data.skills} />}
+        </div>
+      </main>
+      <footer className="App-footer">
+        {/* Footer content */}
+      </footer>
+    </div>
   );
 }
 

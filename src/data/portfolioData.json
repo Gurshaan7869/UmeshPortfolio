@@ -1,0 +1,112 @@
+{
+    "personal_information": {
+      "phone": "+1 (250)-686-2854",
+      "email": "umeshb1300@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/umesh-bhuvanagiri/",
+      "location": "Victoria, BC"
+    },
+    "contact_profile": {
+      "work_experience": [
+        {
+          "title": "Senior Cyber Security Consultant",
+          "company": "GRM Technologies (P) LTD",
+          "location": "Abu Dhabi, UAE & Remote",
+          "responsibilities": [
+            "Conducted thorough Vulnerability Assessments and Penetration Testing (VAPT), supervised Cyber Incident and Threat Management, and led Internal Audits.",
+            "Implemented security procedures with NIST CSF guidelines and CIS Benchmarks.",
+            "Orchestrated 50+ security projects and advised clients on optimal controls."
+          ],
+          "dates": "Jan 2022 – Apr 2024"
+        },
+        {
+          "title": "Cyber Security Consultant",
+          "company": "GRM Technologies (P) LTD",
+          "location": "Chennai, India",
+          "responsibilities": [
+            "Provided data-driven tailored recommendations and strategies for security measures.",
+            "Managed 50+ security projects and interacted with clients on security vulnerabilities."
+          ],
+          "dates": "Apr 2020 – Jan 2022"
+        }
+      ]
+    },
+    "education": [
+      {
+        "logo":"https://seeklogo.com/images/U/university-of-victoria-logo-81516E22DF-seeklogo.com.png",
+        "degree": "Masters in Telecommunications and Information Security (MTIS)",
+        "university": "University of Victoria",
+        "dates": "Sept 2023 – Present (Sept 2024)"
+      },
+      {
+        "logo":"https://upload.wikimedia.org/wikipedia/en/e/e9/Veltech_Rangarajan_Dr._Sagunthala_R%26D_Institute_of_Science_and_Technology_logo.png",
+        "degree": "Bachelor of Technology in Computer Science and Engineering (BTech - CSE)",
+        "university": "Vel Tech University",
+        "dates": "Apr 2016 – May 2020"
+      }
+    ],
+   "skills": [
+    {"name": "Web Application Security", "logo": "https://cdn-icons-png.flaticon.com/512/2019/2019557.png"},
+    {"name": "Mobile Application Security", "logo": "https://cdn-icons-png.flaticon.com/512/6556/6556791.png"},
+    {"name": "API Security", "logo": "https://cdn-icons-png.flaticon.com/512/7595/7595037.png"},
+    {"name": "Thick Client Application Security", "logo": "https://www.briskinfosec.com/assets/seocontents/thickclient-security-assessment.png"},
+    {"name": "OWASP ASVS", "logo": "https://cydrill.com/wp-content/uploads/owasp_logo_flat2_icon.png"},
+    {"name": "WSTG", "logo": "https://cdn-images-1.medium.com/max/1200/1*SCvTnR1Bu5UfnBn1Xn4Bvw.png"},
+    {"name": "MAS Vulnerability Assessment", "logo": "https://cdn-icons-png.flaticon.com/512/1995/1995751.png"},
+    {"name": "Penetration Testing", "logo": "https://cdn-icons-png.flaticon.com/512/10961/10961506.png"},
+    {"name": "Cloud Security Posture Management", "logo": "https://arcticwolf.com/wp-content/uploads/2023/12/CSPM-icon-blue.png"},
+    {"name": "ISO 27001", "logo": "https://static.vecteezy.com/system/resources/thumbnails/028/132/370/small_2x/golden-iso-27001-certified-badge-or-information-security-management-system-iso-27001-icon-rubber-stamp-seal-label-emblem-with-check-mark-glossy-and-golden-badge-transparent-png.png"},
+    {"name": "SOC2", "logo": "https://www.scrut.io/wp-content/uploads/2022/09/Untitled-1-06-1024x1024.png"},
+    {"name": "PCI DSS", "logo": "https://static.isms.online/app/uploads/2020/12/pci-dss-1.png"},
+    {"name": "Secure Source Code Analysis", "logo": "https://redforce.io/img/pages/source_code_review.png"},
+    {"name": "Reverse Engineering", "logo": "https://png.pngtree.com/png-clipart/20230411/original/pngtree-reverse-engineering-line-icon-png-image_9044755.png"},
+    {"name": "Debugging", "logo": "https://png.pngtree.com/png-vector/20230219/ourmid/pngtree-debug-vector-icon-design-illustration-png-image_6604206.png"},
+    {"name": "MITRE ATT&CK", "logo": "https://avatars.githubusercontent.com/u/43272913?s=200&v=4"},
+    {"name": "OWASP", "logo": "https://cdn.icon-icons.com/icons2/3913/PNG/512/owasp_logo_icon_248268.png"},
+    {"name": "PTES Playbook Creation", "logo": "https://png.pngtree.com/png-vector/20221008/ourmid/pngtree-planning-data-graphic-background-vector-png-image_34121468.png"},
+    {"name": "Threat Hunting", "logo": "https://www.stickmancyber.com/hs-fs/hubfs/Threat-Hunting_icon-3_Faster-Threat-Response.png?width=500&height=500&name=Threat-Hunting_icon-3_Faster-Threat-Response.png"},
+    {"name": "Threat Modelling", "logo": "https://www.guidepointsecurity.com/wp-content/uploads/2020/07/service-icon-vulnerability.svg"},
+    {"name": "Computer Networking", "logo": "https://www.freeiconspng.com/thumbs/network-icon/data-network-icon-image-gallery-27.png"},
+    {"name": "Python Scripting", "logo": "https://i.pinimg.com/originals/92/60/dd/9260dd459aa4566cfa25e86a3f10ea1b.png"},
+    {"name": "Shell Scripting", "logo": "https://www.svgrepo.com/show/361365/terminal-bash.svg"},
+    {"name": "Network Security", "logo": "https://cdn-icons-png.flaticon.com/512/10276/10276315.png"}
+  ],
+    "expertise_and_tools": [
+      "Vulnerability Assessment, Penetration Testing: Nessus, HP Fortify, Kali Linux, SonarQube, Snyk, GitGuardian, BurpSuite, Acunetix, Netsparker, Echo Mirage, Frida, Objection, MobSF",
+      "Security Monitoring (SIEM): Splunk, Security Onion, IBM QRadar, ManageEngine, CrowdStrike.",
+      "DLP: MacAfee, Symantec, Forcepoint, Trellix, Microsoft Purview",
+      "Antivirus and Patch Management: MacAfee, Trend Micro, Avast, SolarWinds",
+      "IDS/IPS: Snort, FortiGate, Cisco NGIPS, Security Onion, SolarWinds SEM",
+      "Firewall and Wireless Security: Palo Alto, pfSence,, Zscalar, Cisco ISA Firewall, Cisco ASA, Wireshark, InSSider, Netspot",
+      "Reverse Engineering: IDA Pro, OllyDbg, WinDbg, JAdX",
+      "Standards and Compliance: NIST Cybersecurity Framework (CSF), ISO 27001, PCI DSS, HIPPA and ISO 27002, SOC2",
+      "Database: ORACLE, SQL Server, MySQL, Postgresql",
+      "Additional: JIRA, Selenium, M365 Office suite, MS exchange",
+      "OS: Windows Server 2008-2019, VMware, RHEL, CENTOS"
+    ],
+    "certificates": [
+      "CCNA (Cisco Certified Network Associate)",
+      "ISO 27001 – Lead Auditor",
+      "CCIO (Cyber Crime Intervention Officer)",
+      "ISC2 – CC (Certified in Cybersecurity)",
+      "Fortinet Network Security Expert (NSE) 1, 2, and 3",
+      "U.S. Dept of Homeland Security (210W-01, 210W-02, 210W-05)"
+    ],
+    "achievements": [
+      "Received commendation from clients for exceptional project management skills.",
+      "Recognized for outstanding communication and responsiveness.",
+      "Awarded a client testimonial for exceeding expectations and delivering added value.",
+      "Acknowledged for exemplary leadership in overseeing cyber incident and threat management."
+    ],
+    "languages": ["English", "Tamil", "Telugu"],
+    "hobbies": ["Video Games", "Travel", "Gym", "Movies"],
+    "interests": [
+      "Incident Response",
+      "Penetration Testing",
+      "Information Security Audits",
+      "Compliance Management",
+      "Network Security",
+      "Security regulations compliance"
+    ],
+    "references": "Available upon Request"
+  }
+  

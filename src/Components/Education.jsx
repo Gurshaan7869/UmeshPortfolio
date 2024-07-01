@@ -1,19 +1,30 @@
-function Education(){
-    return(<div>
-        
-### Education
+import React from 'react';
 
-#### Masters in Telecommunications and Information Security (MTIS)
-**Institution:** University of Victoria  
-**Duration:** Sept 2023 – Present (Sept 2024)
+const Education = ({ educations }) => {
+  if (!educations || educations.length === 0) {
+    return (
+      <div>
+        <h2>Education</h2>
+        <p>No education data available.</p>
+      </div>
+    );
+  }
 
-#### Bachelor of Technology in Computer Science and Engineering (BTech - CSE)
-**Institution:** Vel Tech University  
-**Duration:** Apr 2016 – May 2020
+  return (
+    <div className="education-container">
+      <h2>Education</h2>
+      <div className="education-grid">
+        {educations.map((education, index) => (
+          <div key={index} className="education-card">
+            <img src={education.logo}/>
+            <h3>{education.degree}</h3>
+            <p><strong>University:</strong> {education.university}</p>
+            <p><strong>Dates:</strong> {education.dates}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
----
-
-    </div>)
-}
-
-export default Education
+export default Education;
