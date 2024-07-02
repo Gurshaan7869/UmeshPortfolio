@@ -8,6 +8,7 @@
     "contact_profile": {
       "work_experience": [
         {
+          "logo":"/data/GRM.png",
           "title": "Senior Cyber Security Consultant",
           "company": "GRM Technologies (P) LTD",
           "location": "Abu Dhabi, UAE & Remote",
@@ -19,6 +20,7 @@
           "dates": "Jan 2022 – Apr 2024"
         },
         {
+          "logo":"data/GRM.png",
           "title": "Cyber Security Consultant",
           "company": "GRM Technologies (P) LTD",
           "location": "Chennai, India",

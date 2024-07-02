@@ -16,6 +16,7 @@ const Experience = ({ workExperiences }) => {
       <div className="experience-grid">
         {workExperiences.map((experience, index) => (
           <div key={index} className="experience-card">
+            <img src={experience.logo}></img>
             <h3>{experience.title}</h3>
             <p><strong>Company:</strong> {experience.company}</p>
             <p><strong>Location:</strong> {experience.location}</p>

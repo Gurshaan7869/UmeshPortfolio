@@ -116,7 +116,6 @@
 .education-card p {
   margin: 5px 0;
 }
-
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -126,9 +125,11 @@
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 70px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .experience-card {
@@ -138,7 +139,7 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
 }
 
 .experience-card h3 {
@@ -147,4 +148,23 @@
 
 .experience-card p {
   margin: 5px 0;
+}
+
+
+.experience-card h3 {
+  margin-top: 0;
+}
+
+.experience-card p {
+  margin: 5px 0;
+}
+
+.experience-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+
+.experience-card li {
+  margin-bottom: 5px;
 }
