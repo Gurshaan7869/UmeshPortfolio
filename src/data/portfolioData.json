@@ -73,25 +73,25 @@
     {"name": "Network Security", "logo": "https://cdn-icons-png.flaticon.com/512/10276/10276315.png"}
   ],
     "expertise_and_tools": [
-      "Vulnerability Assessment, Penetration Testing: Nessus, HP Fortify, Kali Linux, SonarQube, Snyk, GitGuardian, BurpSuite, Acunetix, Netsparker, Echo Mirage, Frida, Objection, MobSF",
-      "Security Monitoring (SIEM): Splunk, Security Onion, IBM QRadar, ManageEngine, CrowdStrike.",
-      "DLP: MacAfee, Symantec, Forcepoint, Trellix, Microsoft Purview",
-      "Antivirus and Patch Management: MacAfee, Trend Micro, Avast, SolarWinds",
-      "IDS/IPS: Snort, FortiGate, Cisco NGIPS, Security Onion, SolarWinds SEM",
-      "Firewall and Wireless Security: Palo Alto, pfSence,, Zscalar, Cisco ISA Firewall, Cisco ASA, Wireshark, InSSider, Netspot",
-      "Reverse Engineering: IDA Pro, OllyDbg, WinDbg, JAdX",
-      "Standards and Compliance: NIST Cybersecurity Framework (CSF), ISO 27001, PCI DSS, HIPPA and ISO 27002, SOC2",
-      "Database: ORACLE, SQL Server, MySQL, Postgresql",
-      "Additional: JIRA, Selenium, M365 Office suite, MS exchange",
-      "OS: Windows Server 2008-2019, VMware, RHEL, CENTOS"
+      
+      {"name":"Vulnerability Assessment, Penetration Testing: Nessus, HP Fortify, Kali Linux, SonarQube, Snyk, GitGuardian, BurpSuite, Acunetix, Netsparker, Echo Mirage, Frida, Objection, MobSF", "logo":"https://cdn-icons-png.flaticon.com/512/1995/1995751.png"},
+      {"name":"Security Monitoring (SIEM): Splunk, Security Onion, IBM QRadar, ManageEngine, CrowdStrike", "logo":"https://png.pngtree.com/png-vector/20230411/ourmid/pngtree-security-monitoring-icon-vector-png-image_6700688.png"},
+      {"name":"DLP: MacAfee, Symantec, Forcepoint, Trellix, Microsoft Purview", "logo":"https://www.svgrepo.com/show/375408/data-loss-prevention-api.svg"},
+      {"name":"Antivirus and Patch Management: MacAfee, Trend Micro, Avast, SolarWinds", "logo":"https://cdn-icons-png.flaticon.com/512/139/139732.png"},
+      {"name":"IDS/IPS: Snort, FortiGate, Cisco NGIPS, Security Onion, SolarWinds SEM", "logo":"https://static.thenounproject.com/png/2588216-200.png"},
+      {"name":"Firewall and Wireless Security: Palo Alto, pfSence,, Zscalar, Cisco ISA Firewall, Cisco ASA, Wireshark, InSSider, Netspot", "logo":"https://cdn-icons-png.flaticon.com/512/63/63931.png"},
+      {"name": "Reverse Engineering: IDA Pro, OllyDbg, WinDbg, JAdX", "logo":"https://cdn-icons-png.flaticon.com/512/2961/2961313.png"},
+      {"name":"Standards and Compliance: NIST Cybersecurity Framework (CSF), ISO 27001, PCI DSS, HIPPA and ISO 27002, SOC2", "logo":"https://cdn-icons-png.flaticon.com/512/5261/5261403.png"},
+      {"name":"Database: ORACLE, SQL Server, MySQL, Postgresql", "logo":"https://cdn-icons-png.flaticon.com/512/9850/9850812.png"},
+      {"name":"Additional: JIRA, Selenium, M365 Office suite, MS exchange", "logo":"https://icons.veryicon.com/png/o/miscellaneous/frozenui/add-105.png"},
+      {"name":"OS: Windows Server 2008-2019, VMware, RHEL, CENTOS", "logo":"https://cdn-icons-png.flaticon.com/512/689/689399.png"}
     ],
     "certificates": [
-      "CCNA (Cisco Certified Network Associate)",
-      "ISO 27001 – Lead Auditor",
-      "CCIO (Cyber Crime Intervention Officer)",
-      "ISC2 – CC (Certified in Cybersecurity)",
-      "Fortinet Network Security Expert (NSE) 1, 2, and 3",
-      "U.S. Dept of Homeland Security (210W-01, 210W-02, 210W-05)"
+      {"name":"CCNA (Cisco Certified Network Associate)", "logo":"https://www.ciat.edu/wp-content/uploads/2020/12/cisco-ccna-certification.png"},
+      {"name":"ISO 27001 – Lead Auditor", "logo":"https://winupskill.s3.ap-south-1.amazonaws.com/badgeimages/uKqfGZZzLXzXCjjwORP7x1ukS9oMOD2N3GPHm0mo.png"},
+      {"name":"ISC2 – CC (Certified in Cybersecurity)", "logo":"https://images.credly.com/images/2030e43f-8003-4d4b-9630-847add403c87/twitter_thumb_201604_image.png"},
+      {"name":"Fortinet Network Security Expert (NSE) 1, 2, and 3", "logo":"https://www.insoftservices.com/insoft/images/insoft/NSE3-Certification.png"},
+      {"name":"U.S. Dept of Homeland Security (210W-01, 210W-02, 210W-05)", "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Seal_of_the_United_States_Department_of_Homeland_Security.svg/800px-Seal_of_the_United_States_Department_of_Homeland_Security.svg.png"}  
     ],
     "achievements": [
       "Received commendation from clients for exceptional project management skills.",
@@ -102,12 +102,13 @@
     "languages": ["English", "Tamil", "Telugu"],
     "hobbies": ["Video Games", "Travel", "Gym", "Movies"],
     "interests": [
-      "Incident Response",
-      "Penetration Testing",
-      "Information Security Audits",
-      "Compliance Management",
-      "Network Security",
-      "Security regulations compliance"
+      
+      {"name":"Incident Response", "logo":"https://static.vecteezy.com/system/resources/thumbnails/012/042/301/small_2x/warning-sign-icon-transparent-background-free-png.png"},
+      {"name":"Penetration Testing", "logo":"https://cdn-icons-png.flaticon.com/512/10961/10961506.png"},
+      {"name":"Information Security Audits", "logo":"https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-audit-report-or-financial-report-study-png-image_4672458.png"},
+      {"name":"Compliance Management", "logo":"https://png.pngtree.com/png-vector/20230428/ourmid/pngtree-compliance-line-icon-vector-png-image_6739692.png"},
+      {"name":"Network Security", "logo":"https://png.pngtree.com/png-vector/20220903/ourmid/pngtree-wifi-router-png-image_6136079.png"},
+      {"name":"Security regulations compliance", "logo":"https://icons.veryicon.com/png/o/internet--web/internet-website-construction/government-5.png"}
     ],
     "references": "Available upon Request"
   }

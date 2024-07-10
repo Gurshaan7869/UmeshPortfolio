@@ -5,12 +5,15 @@ import PersonalInfo from './components/PersonalInfo';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Certificates from './components/Certificates';
+import Tools from './components/Tools';
+import Interests from './components/Interests';
 import data from './data/portfolioData.json';
 import './App.css';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('personal_info');
-  const sections = ['personal_info', 'work_experience', 'education', 'skills'];
+  const sections = ['personal_info', 'work_experience', 'education', 'skills', 'certificates', 'tools', 'interests'];
 
   const handleNavigation = (section) => {
     setCurrentSection(section);
@@ -46,7 +49,7 @@ function App() {
         <h1>UMESH BHUVANAGIRI</h1>
         <div className="navigation-buttons">
           <button onClick={() => handleNavigation('personal_info')}>
-            <img src="https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png" alt="Personal Info" />
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Personal Info" />
           </button>
           <button onClick={() => handleNavigation('work_experience')}>
             <img src="https://icons.veryicon.com/png/o/miscellaneous/icon-library-of-grey-sun-1/work-experience-1.png" alt="Work Experience" />
@@ -56,6 +59,15 @@ function App() {
           </button>
           <button onClick={() => handleNavigation('skills')}>
             <img src="https://www.freeiconspng.com/uploads/competence-skill-experience-company-product--16.png" alt="Skills" />
+          </button>
+          <button onClick={() => handleNavigation('certificates')}>
+            <img src="https://www.iconpacks.net/icons/1/free-certificate-icon-1356-thumb.png" alt="Certificates" />
+          </button>
+          <button onClick={() => handleNavigation('tools')}>
+            <img src="https://cdn-icons-png.flaticon.com/512/8463/8463653.png" alt="Tools" />
+          </button>
+          <button onClick={() => handleNavigation('interests')}>
+            <img src="https://cdn-icons-png.flaticon.com/512/4384/4384371.png" alt="Interests" />
           </button>
         </div>
       </header>
@@ -68,6 +80,9 @@ function App() {
                 {section === 'work_experience' && <WorkExperience workExperiences={data.contact_profile.work_experience} />}
                 {section === 'education' && <Education educations={data.education} />}
                 {section === 'skills' && <Skills skills={data.skills} />}
+                {section === 'certificates' && <Certificates certificates={data.certificates} />}
+                {section === 'tools' && <Tools tools={data.expertise_and_tools} />}
+                {section === 'interests' && <Interests interests={data.interests} />}
               </Element>
             </CSSTransition>
           ))}

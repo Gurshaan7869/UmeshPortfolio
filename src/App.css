@@ -14,6 +14,7 @@ h1 {
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* Applying Font to the Name */
 .App-header h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -101,70 +102,135 @@ h1 {
 }
 
 /* Skills Section */
-.skills-container,
-.education-container,
-.experience-container,
-.personal-info-container {
+.skills-container {
   padding: 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.skills-grid,
-.education-grid,
-.experience-grid {
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.skill-card,
-.education-card,
-.experience-card,
-.info-card {
+.skill-card {
   background: #FFFFFF; /* White */
   border: 1px solid #37B7C3; /* Blue */
   border-radius: 10px;
   padding: 20px;
+  width: 150px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 150px;
 }
 
-.skill-card:hover,
-.education-card:hover,
-.experience-card:hover,
-.info-card:hover {
+.skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.skill-logo,
-.info-card img,
-.education-card img,
-.experience-card img {
+.skill-logo {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
 }
 
-.skill-card p,
-.education-card h3,
-.experience-card h3,
-.info-card h3 {
+.skill-card p {
   margin: 0;
   font-size: 14px;
   font-weight: bold;
   color: #071952; /* Navy */
 }
 
-.education-card p,
-.experience-card p,
-.info-card p {
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.education-card {
+  background: #FFFFFF; /* White */
+  border: 1px solid #37B7C3; /* Blue */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education-card img {
+  width: 100px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.education-card h3 {
+  margin-top: 20px;
+  color: #071952; /* Navy */
+}
+
+.education-card p {
+  margin: 5px 0;
+  color: #071952; /* Navy */
+}
+
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 70px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-card {
+  background: #FFFFFF; /* White */
+  border: 1px solid #37B7C3; /* Blue */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card img {
+  width: 100px;
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  color: #071952; /* Navy */
+}
+
+.experience-card p {
   margin: 5px 0;
   color: #071952; /* Navy */
 }
@@ -180,13 +246,51 @@ h1 {
   color: #071952; /* Navy */
 }
 
+/* Personal Info Section */
+.personal-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .info-card {
+  background-color: #FFFFFF; /* White */
+  border: 1px solid #37B7C3; /* Blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
   cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, height 0.3s;
   overflow: hidden;
 }
 
 .info-card.expanded {
   height: auto;
+}
+
+.info-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: #071952; /* Navy */
+}
+
+.info-card p {
+  margin: 5px 0;
+  color: #071952; /* Navy */
 }
 
 .info-card a {
@@ -198,24 +302,92 @@ h1 {
   color: #37B7C3; /* Blue */
 }
 
+/* Certificates and Tools Sections */
+.certificates-container,
+.tools-container,
+.interests-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.certificates-grid,
+.tools-grid,
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-card,
+.tool-card,
+.interest-card {
+  background: #FFFFFF; /* White */
+  border: 1px solid #37B7C3; /* Blue */
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover,
+.tool-card:hover,
+.interest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card p,
+.tool-card p,
+.interest-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #071952; /* Navy */
+}
+
+.certificate-card img,
+.tool-card img ,.interest-card img{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
 /* Animations */
-.fade-enter,
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms, transform 300ms;
+}
+
 .slide-enter {
   opacity: 0;
   transform: translateY(100%);
 }
-.fade-enter-active,
 .slide-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 500ms, transform 500ms;
 }
-.fade-exit,
 .slide-exit {
   opacity: 1;
   transform: translateY(0);
 }
-.fade-exit-active,
 .slide-exit-active {
   opacity: 0;
   transform: translateY(-100%);
