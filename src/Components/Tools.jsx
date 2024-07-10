@@ -11,6 +11,7 @@ const Tools = ({ tools }) => {
   }
 
   return (
+    <div className='section-wrap'>
     <div className="tools-container">
       <h2>Expertise and Tools</h2>
       <div className="tools-grid">
@@ -21,6 +22,7 @@ const Tools = ({ tools }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

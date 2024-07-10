@@ -30,6 +30,10 @@ h1 {
   color: #071952; /* Navy */
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .App-link {
@@ -91,7 +95,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 120px 20px 20px; /* Adjusted padding to accommodate fixed header */
 }
 
 .App-footer {
@@ -392,4 +396,21 @@ h1 {
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity 500ms, transform 500ms;
+}
+
+/* CSS for smooth scrolling and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  margin: 20vh 0; /* This ensures each section is vertically centered */
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
 }

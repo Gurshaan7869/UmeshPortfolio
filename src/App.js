@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Element, scroller } from 'react-scroll';
+import React, { useState, useEffect, useRef } from 'react';
+import { scroller } from 'react-scroll';
 import PersonalInfo from './components/PersonalInfo';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
@@ -13,6 +12,7 @@ import './App.css';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('personal_info');
+  const sectionRefs = useRef({});
   const sections = ['personal_info', 'work_experience', 'education', 'skills', 'certificates', 'tools', 'interests'];
 
   const handleNavigation = (section) => {
@@ -26,11 +26,11 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY + window.innerHeight / 2;
+      const scrollY = window.scrollY;
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const element = document.getElementById(section);
-        if (element && element.offsetTop <= scrollY) {
+        if (element && element.offsetTop - 120 <= scrollY) { // Adjusted for fixed header
           setCurrentSection(section);
           break;
         }
@@ -72,21 +72,22 @@ function App() {
         </div>
       </header>
       <main className="App-main">
-        <TransitionGroup>
-          {sections.map((section) => (
-            <CSSTransition key={section} timeout={500} classNames="slide">
-              <Element name={section} id={section} className={`section ${currentSection === section ? 'active' : ''}`}>
-                {section === 'personal_info' && <PersonalInfo data={data.personal_information} />}
-                {section === 'work_experience' && <WorkExperience workExperiences={data.contact_profile.work_experience} />}
-                {section === 'education' && <Education educations={data.education} />}
-                {section === 'skills' && <Skills skills={data.skills} />}
-                {section === 'certificates' && <Certificates certificates={data.certificates} />}
-                {section === 'tools' && <Tools tools={data.expertise_and_tools} />}
-                {section === 'interests' && <Interests interests={data.interests} />}
-              </Element>
-            </CSSTransition>
-          ))}
-        </TransitionGroup>
+        {sections.map((section) => (
+          <div
+            key={section}
+            id={section}
+            ref={(el) => (sectionRefs.current[section] = el)}
+            className={`section ${currentSection === section ? 'active' : ''}`}
+          >
+            {section === 'personal_info' && <PersonalInfo data={data.personal_information} />}
+            {section === 'work_experience' && <WorkExperience workExperiences={data.contact_profile.work_experience} />}
+            {section === 'education' && <Education educations={data.education} />}
+            {section === 'skills' && <Skills skills={data.skills} />}
+            {section === 'certificates' && <Certificates certificates={data.certificates} />}
+            {section === 'tools' && <Tools tools={data.expertise_and_tools} />}
+            {section === 'interests' && <Interests interests={data.interests} />}
+          </div>
+        ))}
       </main>
       <footer className="App-footer">
         {/* Footer content */}
