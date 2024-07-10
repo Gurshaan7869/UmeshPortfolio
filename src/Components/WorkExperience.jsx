@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Experience = ({ workExperiences }) => {
+const WorkExperience = ({ workExperiences }) => {
   if (!workExperiences || workExperiences.length === 0) {
     return (
       <div>
@@ -16,7 +16,7 @@ const Experience = ({ workExperiences }) => {
       <div className="experience-grid">
         {workExperiences.map((experience, index) => (
           <div key={index} className="experience-card">
-            <img src={experience.logo}></img>
+            <img src={experience.logo} alt={experience.company} />
             <h3>{experience.title}</h3>
             <p><strong>Company:</strong> {experience.company}</p>
             <p><strong>Location:</strong> {experience.location}</p>
@@ -33,4 +33,4 @@ const Experience = ({ workExperiences }) => {
   );
 };
 
-export default Experience;
+export default WorkExperience;

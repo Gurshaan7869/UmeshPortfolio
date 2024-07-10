@@ -1,14 +1,14 @@
 {
     "personal_information": {
-      "phone": "+1 (250)-686-2854",
-      "email": "umeshb1300@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/umesh-bhuvanagiri/",
-      "location": "Victoria, BC"
+      "phone": {"value":"+1 (250)-686-2854", "logo":"https://www.freeiconspng.com/thumbs/phone-icon/white-phone-icon-png--clipart-best-30.png"},
+      "email":  {"value":"umeshb1300@gmail.com", "logo":"https://static.vecteezy.com/system/resources/previews/021/454/517/non_2x/email-confirmation-app-icon-email-icon-free-png.png"},
+      "linkedin":{"value":"https://www.linkedin.com/in/umesh-bhuvanagiri/", "logo":"https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"},
+      "location": {"value":"Victoria, BC", "logo":"https://www.freeiconspng.com/thumbs/location-icon-png/location-outline-icon-9.png"}
     },
     "contact_profile": {
       "work_experience": [
         {
-          "logo":"/data/GRM.png",
+          "logo":"https://github.com/Gurshaan7869/UmeshPortfolio/blob/master/src/data/GRM.png?raw=true",
           "title": "Senior Cyber Security Consultant",
           "company": "GRM Technologies (P) LTD",
           "location": "Abu Dhabi, UAE & Remote",
@@ -20,7 +20,7 @@
           "dates": "Jan 2022 – Apr 2024"
         },
         {
-          "logo":"data/GRM.png",
+          "logo":"https://github.com/Gurshaan7869/UmeshPortfolio/blob/master/src/data/GRM.png?raw=true",
           "title": "Cyber Security Consultant",
           "company": "GRM Technologies (P) LTD",
           "location": "Chennai, India",
