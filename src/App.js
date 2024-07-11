@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { scroller } from 'react-scroll';
 import PersonalInfo from './components/PersonalInfo';
 import WorkExperience from './components/WorkExperience';
 import Education from './components/Education';
@@ -17,58 +16,62 @@ function App() {
 
   const handleNavigation = (section) => {
     setCurrentSection(section);
-    scroller.scrollTo(section, {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-    });
+    sectionRefs.current[section].scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (event) => {
       const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      let activeSection = sections[0];
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
-        const element = document.getElementById(section);
-        if (element && element.offsetTop - 120 <= scrollY) { // Adjusted for fixed header
-          setCurrentSection(section);
+        const element = sectionRefs.current[section];
+        if (element && element.offsetTop <= scrollY + windowHeight / 2) {
+          activeSection = section;
           break;
         }
       }
+      setCurrentSection(activeSection);
     };
 
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [sections]);
+
+  const handleWheel = (event) => {
+    const deltaY = event.deltaY;
+    const currentIndex = sections.indexOf(currentSection);
+
+    if (deltaY > 0 && currentIndex < sections.length - 1) {
+      handleNavigation(sections[currentIndex + 1]);
+    } else if (deltaY < 0 && currentIndex > 0) {
+      handleNavigation(sections[currentIndex - 1]);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('wheel', handleWheel);
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, [currentSection, sections]);
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>UMESH BHUVANAGIRI</h1>
         <div className="navigation-buttons">
-          <button onClick={() => handleNavigation('personal_info')}>
-            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png" alt="Personal Info" />
-          </button>
-          <button onClick={() => handleNavigation('work_experience')}>
-            <img src="https://icons.veryicon.com/png/o/miscellaneous/icon-library-of-grey-sun-1/work-experience-1.png" alt="Work Experience" />
-          </button>
-          <button onClick={() => handleNavigation('education')}>
-            <img src="https://www.freeiconspng.com/thumbs/education-png/education-png-1.png" alt="Education" />
-          </button>
-          <button onClick={() => handleNavigation('skills')}>
-            <img src="https://www.freeiconspng.com/uploads/competence-skill-experience-company-product--16.png" alt="Skills" />
-          </button>
-          <button onClick={() => handleNavigation('certificates')}>
-            <img src="https://www.iconpacks.net/icons/1/free-certificate-icon-1356-thumb.png" alt="Certificates" />
-          </button>
-          <button onClick={() => handleNavigation('tools')}>
-            <img src="https://cdn-icons-png.flaticon.com/512/8463/8463653.png" alt="Tools" />
-          </button>
-          <button onClick={() => handleNavigation('interests')}>
-            <img src="https://cdn-icons-png.flaticon.com/512/4384/4384371.png" alt="Interests" />
-          </button>
+          {sections.map((section) => (
+            <button key={section} onClick={() => handleNavigation(section)}>
+              <img src={`icons/${section}.png`} alt={section} />
+            </button>
+          ))}
         </div>
       </header>
       <main className="App-main">
@@ -90,7 +93,10 @@ function App() {
         ))}
       </main>
       <footer className="App-footer">
-        {/* Footer content */}
+        <p>phone: {data.personal_information.phone.value}</p>
+        <p>email: {data.personal_information.email.value}</p>
+        <p>LinkedIn: {data.personal_information.linkedin.value}</p>
+        <p>&copy; Umesh Bhuvanagiri </p>
       </footer>
     </div>
   );
