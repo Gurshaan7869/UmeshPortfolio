@@ -1,4 +1,19 @@
 {
+    "about": [
+      {
+        "description": "I am Umesh Bhuvanagiri, a dedicated Cyber Security Professional with over four years of experience. My journey has taken me from Chennai, India, to Abu Dhabi, UAE, and now to Victoria, BC, where I am pursuing a Master's in Telecommunications and Information Security at the University of Victoria."
+      },
+      {
+        "description": "I specialize in Vulnerability Assessment, Penetration Testing (VAPT), and Incident Management. My track record includes conducting security assessments for web, mobile, and API applications using tools like Qualys and Veracode. I excel in secure code analysis, reverse engineering, and implementing security measures aligned with industry standards such as ISO 27001, PCI DSS, and NIST CSF."
+      },
+      {
+        "description": "In another significant project, I conducted a penetration test that uncovered vulnerabilities leading to an admin takeover. I identified issues such as user enumeration and lack of rate limiting. Exploiting these, I demonstrated a critical security flaw by bypassing OTP protections and accessing the admin account. This project highlighted the importance of comprehensive security assessments and effective mitigation strategies."
+      },
+      {
+        "description": "In addition to my technical skills, I am fluent in English, Tamil, and Telugu. I enjoy video games, traveling, and staying fit at the gym. My diverse interests and commitment to cybersecurity make me a well-rounded professional ready to tackle evolving challenges in this dynamic field."
+      }
+    ],
+
     "personal_information": {
       "phone": {"value":"+1 (250)-686-2854", "logo":"https://www.freeiconspng.com/thumbs/phone-icon/white-phone-icon-png--clipart-best-30.png"},
       "email":  {"value":"umeshb1300@gmail.com", "logo":"https://static.vecteezy.com/system/resources/previews/021/454/517/non_2x/email-confirmation-app-icon-email-icon-free-png.png"},

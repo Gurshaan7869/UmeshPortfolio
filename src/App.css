@@ -368,6 +368,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+.interests-container{
+  margin-bottom: 20%;
+}
+
 /* Animations */
 .fade-enter {
   opacity: 0;
@@ -416,7 +420,6 @@ html {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  margin: 10vh 0; /* Reduced vertical margin to 10vh */
 }
 
 .section.active {
@@ -424,3 +427,42 @@ html {
   transform: translateY(0);
 }
 
+.about-para{
+  margin-right: 150px;
+}
+
+.about-card{
+  text-align: left;
+  background-color: #FFFFFF; /* White */
+  border: 1px solid #37B7C3; /* Blue */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 1% 10%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.section-header{
+  margin-top: 15%;
+  font-size: 1.5rem;
+}
+
+.section-header img{
+  width: 69px;
+}
+
+h2{
+  margin: 0%;
+}
+
+.profile-photo{
+  margin: 20px 50px;
+}
+
+.profile-photo img{
+  border-radius: 200px;
+}

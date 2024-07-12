@@ -1,0 +1,21 @@
+{
+    "personal_information": [
+      {
+        "name": "Umesh Bhuvanagiri",
+        "description": "I am Umesh Bhuvanagiri, a passionate and dedicated Cyber Security Professional with over four years of extensive experience in the field. My career journey has taken me from Chennai, India, to Abu Dhabi, UAE, and now to Victoria, BC, where I am currently pursuing my Master's in Telecommunications and Information Security at the University of Victoria."
+      },
+      {
+        "description": "Throughout my professional journey, I have developed a robust skill set that includes Vulnerability Assessment, Penetration Testing (VAPT), and Incident Management. I have a proven track record of conducting thorough security assessments for web, mobile, and API applications, utilizing advanced tools like Qualys and Veracode. My expertise extends to secure code analysis, reverse engineering, threat hunting, and implementing security measures in alignment with industry standards such as ISO 27001, PCI DSS, and NIST CSF."
+      },
+      {
+        "description": "One notable project involved investigating a significant cybersecurity incident at the Tamilnadu State Apex Cooperative Bank. My tasks included analyzing compromised systems, identifying vulnerabilities, and producing reports that were shared with law enforcement authorities. This ultimately led to the apprehension of the criminals involved. During this situation, I demonstrated my skill in handling pressure while upholding confidentiality and professionalism. If you are interested, you can find details about this project by visiting the link: The Hindu Article."
+      },
+      {
+        "description": "In another significant project, I conducted a comprehensive penetration test on an application. This test revealed a chain of vulnerabilities that could lead to an admin takeover. This assessment involved multiple URLs and endpoints, including login and OTP submission endpoints. I identified several issues: user enumeration, backward-compatible API versioning, and lack of rate limiting. By exploiting these vulnerabilities, I was able to demonstrate a critical security flaw. Specifically, I discovered that while the newer API endpoint correctly implemented rate limiting, the older version did not. This discrepancy allowed me to initiate a brute force attack using BurpSuite's intruder on the older endpoint, successfully bypassing OTP protections and gaining access to the admin account. Once I had control over the admin account, I demonstrated the vulnerability’s impact by logging into the admin dashboard. This significant discovery highlights the need to address these security issues thoroughly. In my role, I have pinpointed these vulnerabilities and their origins and also provided detailed suggestions for addressing them. These recommendations included setting up error messages, eliminating API versions, and implementing rate limiting across all OTP endpoints."
+      },
+      {
+        "description": "In addition to my technical skills, I am fluent in English, Tamil, and Telugu, and enjoy activities such as video games, traveling, and staying fit at the gym. My diverse interests and commitment to cybersecurity make me a well-rounded individual ready to tackle the evolving challenges in this dynamic field."
+      }
+    ]
+  }
+  

@@ -4,7 +4,6 @@ const WorkExperience = ({ workExperiences }) => {
   if (!workExperiences || workExperiences.length === 0) {
     return (
       <div>
-        <h2>Work Experience</h2>
         <p>No work experience data available.</p>
       </div>
     );
@@ -12,7 +11,6 @@ const WorkExperience = ({ workExperiences }) => {
 
   return (
     <div className="experience-container">
-      <h2>Work Experience</h2>
       <div className="experience-grid">
         {workExperiences.map((experience, index) => (
           <div key={index} className="experience-card">

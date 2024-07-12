@@ -4,7 +4,6 @@ const Education = ({ educations }) => {
   if (!educations || educations.length === 0) {
     return (
       <div>
-        <h2>Education</h2>
         <p>No education data available.</p>
       </div>
     );
@@ -12,7 +11,6 @@ const Education = ({ educations }) => {
 
   return (
     <div className="education-container">
-      <h2>Education</h2>
       <div className="education-grid">
         {educations.map((education, index) => (
           <div key={index} className="education-card">

@@ -4,7 +4,6 @@ const Skills = ({ skills }) => {
   if (!skills || skills.length === 0) {
     return (
       <div>
-        <h2>Skills</h2>
         <p>No skills data available.</p>
       </div>
     );
@@ -12,7 +11,6 @@ const Skills = ({ skills }) => {
 
   return (
     <div className="skills-container">
-      <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
