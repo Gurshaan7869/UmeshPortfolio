@@ -9,6 +9,7 @@ import Interests from './components/Interests';
 import About from './components/About';
 import data from './data/portfolioData.json';
 import './App.css';
+import { Link } from 'react-scroll';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('about');
@@ -107,9 +108,9 @@ function App() {
         ))}
       </main>
       <footer className="App-footer">
-        <p>phone: {data.personal_information.phone.value}</p>
-        <p>email: {data.personal_information.email.value}</p>
-        <p>LinkedIn: {data.personal_information.linkedin.value}</p>
+        <p>PHONE: {data.personal_information.phone.value}</p>
+        <p>EMAIL: {data.personal_information.email.value}</p>
+        <a href={data.personal_information.linkedin.value}><p><img src={data.personal_information.linkedin.logo}/></p></a>
         <p>&copy; Umesh Bhuvanagiri </p>
       </footer>
     </div>

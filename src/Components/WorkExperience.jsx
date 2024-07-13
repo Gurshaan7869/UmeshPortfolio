@@ -16,9 +16,9 @@ const WorkExperience = ({ workExperiences }) => {
           <div key={index} className="experience-card">
             <img src={experience.logo} alt={experience.company} />
             <h3>{experience.title}</h3>
-            <p><strong>Company:</strong> {experience.company}</p>
-            <p><strong>Location:</strong> {experience.location}</p>
-            <p><strong>Dates:</strong> {experience.dates}</p>
+            <p>{experience.company}</p>
+            <p> {experience.location}</p>
+            <p> {experience.dates}</p>
             <ul>
               {experience.responsibilities.map((responsibility, i) => (
                 <li key={i}>{responsibility}</li>

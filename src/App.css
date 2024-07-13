@@ -5,10 +5,13 @@ h1 {
 
 .App {
   text-align: center;
-  background: linear-gradient(to bottom, #EBF4F6, #D7E9F0); /* Light Blue Gradient */
   min-height: 100vh;
   color: #071952; /* Navy */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'roboto', sans-serif;
+  background: linear-gradient(to bottom, #EBF4F6, #D7E9F0);
+  background-image: url("https://images4.alphacoders.com/585/585935.png");
+  background-repeat: repeat;
+  background-position: center;
 }
 
 /* Importing Google Font */
@@ -22,6 +25,7 @@ h1 {
 
 .App-header {
   background: linear-gradient(to bottom, #EBF4F6, #D7E9F0); /* Light Blue Gradient */
+  background-image: url('');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +118,10 @@ h1 {
   margin: auto;
 }
 
+.App-footer img{
+  width: 40px;
+}
+
 /* Skills Section */
 .skills-container {
   padding: 20px;
@@ -166,7 +174,7 @@ h1 {
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   gap: 20px;
   justify-content: center;
 }
@@ -178,6 +186,8 @@ h1 {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .education-card:hover {
@@ -192,6 +202,7 @@ h1 {
 }
 
 .education-card h3 {
+  font-size: 150%;
   margin-top: 20px;
   color: #071952; /* Navy */
 }
@@ -227,6 +238,8 @@ h1 {
   width: 100%;
   max-width: 600px;
   transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .experience-card:hover {
@@ -239,6 +252,7 @@ h1 {
 }
 
 .experience-card h3 {
+  font-size: 200%;
   margin-top: 0;
   color: #071952; /* Navy */
 }
@@ -339,7 +353,7 @@ h1 {
   border: 1px solid #37B7C3; /* Blue */
   border-radius: 10px;
   padding: 20px;
-  width: 250px;
+  width: 12%;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -428,7 +442,10 @@ html {
 }
 
 .about-para{
-  margin-right: 150px;
+    color: #002E5D; /* Dark gray */
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 10%;
 }
 
 .about-card{
@@ -438,7 +455,7 @@ html {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 1% 10%;
+  margin: 1% 20%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -447,7 +464,7 @@ html {
 }
 
 .section-header{
-  margin-top: 15%;
+  margin-top: 7%;
   font-size: 1.5rem;
 }
 
@@ -460,9 +477,10 @@ h2{
 }
 
 .profile-photo{
-  margin: 20px 50px;
+  margin: 5%
 }
 
 .profile-photo img{
   border-radius: 200px;
 }
+
