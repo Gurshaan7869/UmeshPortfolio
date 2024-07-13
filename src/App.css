@@ -4,14 +4,28 @@ h1 {
 }
 
 .App {
+  position: relative; /* Add this */
   text-align: center;
   min-height: 100vh;
   color: #071952; /* Navy */
   font-family: 'roboto', sans-serif;
   background: linear-gradient(to bottom, #EBF4F6, #D7E9F0);
+  z-index: 1; /* Ensure this is above the pseudo-element */
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("https://images4.alphacoders.com/585/585935.png");
   background-repeat: repeat;
   background-position: center;
+  opacity: 0.5; /* Set opacity */
+  z-index: -1; /* Ensure it is behind other contents */
+  pointer-events: none; /* Make sure it doesn't interfere with content interaction */
 }
 
 /* Importing Google Font */
@@ -25,7 +39,7 @@ h1 {
 
 .App-header {
   background: linear-gradient(to bottom, #EBF4F6, #D7E9F0); /* Light Blue Gradient */
-  background-image: url('');
+  background-image: url("");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +47,6 @@ h1 {
   font-size: calc(10px + 2vmin);
   color: #071952; /* Navy */
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   width: 100%;
@@ -114,12 +127,20 @@ h1 {
   display: flex;
 }
 
-.App-footer p{
+.footer-elements {
+  display: flex;
+  width: 20%;
   margin: auto;
 }
 
-.App-footer img{
+.App-footer img {
   width: 40px;
+  height: 40px;
+}
+
+.App-footer p {
+  margin-left: 1%;
+  margin-top: 2.7%
 }
 
 /* Skills Section */
@@ -136,6 +157,7 @@ h1 {
 }
 
 .skill-card {
+  font-size: 1.2rem;
   background: #FFFFFF; /* White */
   border: 1px solid #37B7C3; /* Blue */
   border-radius: 10px;
@@ -159,7 +181,6 @@ h1 {
 
 .skill-card p {
   margin: 0;
-  font-size: 14px;
   font-weight: bold;
   color: #071952; /* Navy */
 }
@@ -349,6 +370,7 @@ h1 {
 .certificate-card,
 .tool-card,
 .interest-card {
+  font-size: 1.2rem;
   background: #FFFFFF; /* White */
   border: 1px solid #37B7C3; /* Blue */
   border-radius: 10px;
@@ -370,7 +392,6 @@ h1 {
 .tool-card p,
 .interest-card p {
   margin: 0;
-  font-size: 14px;
   font-weight: bold;
   color: #071952; /* Navy */
 }
@@ -382,7 +403,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.interests-container{
+.interests-container {
   margin-bottom: 20%;
 }
 
@@ -441,14 +462,14 @@ html {
   transform: translateY(0);
 }
 
-.about-para{
-    color: #002E5D; /* Dark gray */
+.about-para {
+  color: #002E5D; /* Dark gray */
   font-size: 1.2rem;
   font-weight: 700;
   margin-right: 10%;
 }
 
-.about-card{
+.about-card {
   text-align: left;
   background-color: #FFFFFF; /* White */
   border: 1px solid #37B7C3; /* Blue */
@@ -459,28 +480,28 @@ html {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
 }
 
-.section-header{
+.section-header {
   margin-top: 7%;
   font-size: 1.5rem;
 }
 
-.section-header img{
+.section-header img {
   width: 69px;
 }
 
-h2{
+h2 {
   margin: 0%;
 }
 
-.profile-photo{
-  margin: 5%
+.profile-photo {
+  margin-right: 15%;
+  align-self: center;
 }
 
-.profile-photo img{
+.profile-photo img {
   border-radius: 200px;
 }
-

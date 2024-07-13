@@ -108,11 +108,19 @@ function App() {
         ))}
       </main>
       <footer className="App-footer">
-        <p>PHONE: {data.personal_information.phone.value}</p>
-        <p>EMAIL: {data.personal_information.email.value}</p>
+        <div className='footer-elements'>
+        <img src='https://www.freeiconspng.com/thumbs/telephone-icon/mobile-phone-icon-phone-telephone-icon-22.png'/> <p>{data.personal_information.phone.value}</p>
+        </div>
+        <div className='footer-elements'>
+        <img src='https://www.pngall.com/wp-content/uploads/13/Email-Logo-PNG-File.png'/> <p>{data.personal_information.email.value}</p>
+        </div>
+        <div className='footer-elements'>
         <a href={data.personal_information.linkedin.value}><p><img src={data.personal_information.linkedin.logo}/></p></a>
+        </div>
+        <div className='footer-elements'>
         <p>&copy; Umesh Bhuvanagiri </p>
-      </footer>
+        </div>
+        </footer>
     </div>
   );
 }
