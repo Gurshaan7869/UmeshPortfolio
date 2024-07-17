@@ -8,7 +8,6 @@ import Interests from './Components/Interests';
 import About from './Components/About';
 import data from './data/portfolioData.json';
 import './App.css';
-import { Link } from 'react-scroll';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('about');
@@ -108,13 +107,13 @@ function App() {
       </main>
       <footer className="App-footer">
         <div className='footer-elements'>
-        <img src='https://www.freeiconspng.com/thumbs/telephone-icon/mobile-phone-icon-phone-telephone-icon-22.png'/> <p>{data.personal_information.phone.value}</p>
+        <img src='https://www.freeiconspng.com/thumbs/telephone-icon/mobile-phone-icon-phone-telephone-icon-22.png' alt=''/> <p>{data.personal_information.phone.value}</p>
         </div>
         <div className='footer-elements'>
-        <img src='https://www.pngall.com/wp-content/uploads/13/Email-Logo-PNG-File.png'/> <p>{data.personal_information.email.value}</p>
+        <img src='https://www.pngall.com/wp-content/uploads/13/Email-Logo-PNG-File.png' alt=''/> <p>{data.personal_information.email.value}</p>
         </div>
         <div className='footer-elements'>
-        <a href={data.personal_information.linkedin.value}><p><img src={data.personal_information.linkedin.logo}/></p></a>
+        <a href={data.personal_information.linkedin.value}><p><img src={data.personal_information.linkedin.logo} alt=''/></p></a>
         </div>
         <div className='footer-elements'>
         <p>&copy; Umesh Bhuvanagiri </p>

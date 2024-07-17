@@ -14,7 +14,7 @@ const Certificates = ({ certificates }) => {
       <div className="certificates-grid">
         {certificates.map((certificate, index) => (
           <div key={index} className="certificate-card">
-            <img src={certificate.logo}/>
+            <img src={certificate.logo} alt=''/>
             <p>{certificate.name}</p>
           </div>
         ))}
